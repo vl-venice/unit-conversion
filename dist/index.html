@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Metric/Imperial Unit Conversion</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" crossorigin href="/assets/index-BGi5JFOq.css">
+    </head>
+    <body>
+        <main class="converter-card">
+            <h1>Metric/Imperial Unit Conversion</h1>
+
+            <form id="conversion-form">
+                <label for="unit-input">Enter a whole number</label>
+                <div class="input-row">
+                    <input id="unit-input" type="number" min="0" step="1" inputmode="numeric" placeholder="e.g. 10" required>
+                    <button type="submit">Convert</button>
+                </div>
+                <p class="input-note" id="input-note" role="alert"></p>
+            </form>
+
+            <section class="results" aria-live="polite">
+                <article class="conversion-card">
+                    <div>
+                        <h2>Length <span>(Meter / Feet)</span></h2>
+                        <p id="length-output">Enter a number above to see the conversion.</p>
+                    </div>
+                </article>
+                <article class="conversion-card">
+                    <div>
+                        <h2>Volume <span>(Litres / Gallons)</span></h2>
+                        <p id="volume-output">Your volume conversion will appear here.</p>
+                    </div>
+                </article>
+                <article class="conversion-card">
+                    <div>
+                        <h2>Mass <span>(Kilograms / Pounds)</span></h2>
+                        <p id="mass-output">Your mass conversion will appear here.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
